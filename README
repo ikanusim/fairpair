@@ -1,0 +1,11 @@
+The idea of this tool was born in a pair programming session a few days ago.
+I was the guest, so I was not using my own machine with my aliases for bash and git.
+Some of my aliases were present, some were not.
+
+When there's a clash, that is a key that is present in both the host's and the guest's environment and has different values in each, there isn't really a way to provide a fair solution to both users. But in case there are aliases or other settings I have in my environment that the other user doesn't have at all, why shouldn't I copy these over to his environment? That way I can use what I like without disturbing my pair mate.
+
+That's exactly what this tool is supposed to do.
+
+This first version is very limited but it does exactly what I wanted to have in the situation mentioned in the first paragraph.
+
+merge_gitconfig.rb expects the Github username of the user whose settings are to be imported to be passed as the only parameter. It furthermore expects this user to have a Github user page, a directory called config_files within this page and his git settings in a file called gitconfig within this directory. Pretty brittle, I know, but I am fascinated by the idea and want to share it as soon as possible.
